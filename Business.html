@@ -10,6 +10,7 @@
     rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
     crossorigin="anonymous">
+    <link rel="stylesheet" href="MainStyle.css">
 
 </head>
 
@@ -20,38 +21,136 @@
         <div class="row h-100">
             <!-- This is the left column. -->
           <div class="col-4 col-md-3 border bg-light text-white">
-            <div class="inner-row-1 bg-info rounded-top"> 
-                &nbsp;Channels
-                <ul class ="list-group">
-                    <li class= "list-group-item">General</li>
-                    <li class= "list-group-item">Marketing</li>
-                    <li class="list-group-item">Operations</li>
-                    <li class= "list-group-item">Random</li>
-                    <li class="list-group-item">Standups</li>
-                </ul>
-            </div>
-            <br>
-            <div class="inner-row-2 bg-info rounded-top">
-                &nbsp;Direct Messages
-                <ul class ="list-group">
-                    <li class= "list-group-item">Liam</li>
-                    <li class= "list-group-item">Lyn</li>
-                    <li class="list-group-item">Melanie</li>
-                    <li class="list-group-item">Gayeon</li>
-                </ul>
+            <div class="Channels rounded-top"> 
+                <!--&nbsp;Channels-->
+                <p>
+                    <button class="btn btn-primary text-dark bg-white border border-blue border-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#Chatrooms" aria-expanded="false" aria-controls="multiCollapseExample2">
+                            Chatrooms</button>
+                </p>
 
+                <div class="row">
+                    <div class="col">
+                        <div class= "collapse multi-collapse" id="Chatrooms">
+                            <div class="card card-body skybox">
+                                <ul class ="list-group">
+                                    <li class= "list-group-item">General</li>
+                                    <li class= "list-group-item">Marketing</li>
+                                    <li class="list-group-item">Operations</li>
+                                    <li class= "list-group-item">Random</li>
+                                    <li class="list-group-item">Standups</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <p>
+                        <button class="btn btn-primary text-dark bg-white border border-blue border-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#People" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">
+                            People</button>
+                </p>
             </div>
 
-          </div>
+            <div class="DM bg-info rounded-top">
+                <!--&nbsp;Direct Messages-->
+                <div class="collapse" id="People">
+                    <div class="card card-body skybox">
+                        <ul class ="list-group">
+                            <li class= "list-group-item">Liam</li>
+                            <li class= "list-group-item">Lyn</li>
+                            <li class="list-group-item">Melanie</li>
+                            <li class="list-group-item">Gayeon</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+
+<!------------------------------- RIGHT SIDE FROM HERE!------------------------------------>
+
+        </div>
           <!-- This is the right column. -->
-          <div class="col-8 col-md-9 border border-primary bg-dark text-white">
-              Business Communication Platform
+          <div class="col-8 col-md-9 border border-primary bg-dark text-black">
+              <div class="text-white">Business Communication Platform</div>
 
-            <div class="input-group row align-items-end">
-                <span class="input-group-text align-items-end">Chat</span>
-                <textarea class="form-control align-items-end" aria-label="With textarea">
-                </textarea>
+              <div class="card mb-1" >
+                <div class="row g-4">
+                  <div class="col-md-2">
+                    <img src="https://avatars.githubusercontent.com/u/57173871?v=4"
+                    class="img-fluid rounded-start rounded-circle border border-white border-5" style="width:150px;height:130px;" alt="..."
+                    >
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Liam</h5>
+                      <p class="card-text">I want to scroll down the chat window, do you want to do it later?</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
               </div>
+
+              <div class="card mb-1" >
+                <div class="row g-4">
+                  <div class="col-md-2">
+                    <img src="https://avatars.githubusercontent.com/u/86810056?s=400&u=80b6b33a27aeb02ee2c7eb99b8d5bcd2f27e39ca&v=4"
+                    class="img-fluid rounded-start rounded-circle border border-white border-5" style="width:150px;height:130px;" alt=""
+                    >
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Melanie</h5>
+                      <p class="card-text">for that i believe it is we have to use the display flex</p>
+                      <p class="card-text"><small class="text-muted">Last updated 2 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-1" >
+                <div class="row g-4">
+                  <div class="col-md-2"> 
+                    <img src="https://static.wikia.nocookie.net/helltaker/images/9/9f/Justice2Think.png"
+                    class="img-fluid rounded-start rounded-circle border border-white border-5" style="width:150px;height:130px;" alt=""
+                    >
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Lyn</h5>
+                      <p class="card-text">I can solve that problem</p>
+                      <p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-2" >
+                <div class="row g-4">
+                  <div class="col-md-2">
+                    <img src="https://play-lh.googleusercontent.com/hjJxprwkClyF4b6YY6zIt2eXZpn7eh68y5EWdiBmBqVz8Z0KiuFIf5KMTWJG8j5Lzio"
+                    class="img-fluid rounded-start rounded-circle border border-white border-5" style="width:150px;height:130px;" alt=""
+                    >
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Gayeon</h5>
+                      <p class="card-text">Good!</p>
+                      <p class="card-text"><small class="text-muted">Last updated 36 sec ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="container">
+                <div class="input-group col-6 align-items-end">
+                    <textarea class="form-control align-items-end" aria-label="With textarea"
+                    placeholder="Enter your message here"></textarea>
+                    </textarea>
+                </div>
+            </div>
 
           </div>
         </div>
